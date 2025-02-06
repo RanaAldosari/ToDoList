@@ -1,0 +1,105 @@
+body{
+    background-color: #F5F5F5;
+    font-family: "Tajawal", sans-serif;
+    height: 100vh;
+}
+.circletools{
+    display: flex; justify-content: space-between; align-items: center; width: 30%;
+}
+.tasks-tabel{
+    background-color: #4B164C;
+/* height: 500px; */
+width: 60%;
+margin-top: 130px;
+border-radius: 10px;
+}
+
+.circular{
+    width: 40px;
+    height: 40px;
+    margin: 1px;
+    border-radius: 50%;
+     color:  rgba(249, 252, 246, 0.916);
+    line-height: 1;
+}
+
+.task{
+    display: flex;
+    background-color:  rgba(159, 158, 158, 0.571);
+    padding: 2px;
+    border-bottom: solid black 1px;
+    transition: box-shadow 0.2s;
+    color: #ffffffe0;
+    border-radius: 10px;
+}
+
+.task:hover{
+    box-shadow: 0px 3px 15px;
+}
+
+.done{
+    background-color: rgba(81, 82, 80, 0.571);
+}
+
+@media(max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .circular{
+        width: 50px;
+        height: 40px;
+        border-radius: 50%;
+         color:  rgba(249, 252, 246, 0.916);
+        line-height: 1;
+        margin: 3px;
+    }
+    .tasks-tabel{
+        background-color: #4B164C;
+    /* height: 500px; */
+    width: 90%;
+    margin-top: 130px;
+    border-radius: 10px;
+    }
+    .circletools{
+        display: flex; justify-content: space-around; align-items: center; width: 50%;
+    }
+    .task{
+        width: 100%;
+    }
+    
+    
+}
+@media(max-width:300px){
+    .circletools{
+        display: flex; justify-content: space-between; align-items: center; width: 50%;
+    }
+    .task{
+        
+        display: flex;
+        background-color:  rgba(159, 158, 158, 0.571);
+        padding: 2px;
+        border-bottom: solid black 1px;
+        transition: box-shadow 0.2s;
+        color: #ffffffe0;
+        border-radius: 10px;
+    }
+    .circular{
+        margin: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+         color:  rgba(249, 252, 246, 0.916);
+        line-height: 1;
+        margin: 1px;
+    }
+    .tasks-tabel{
+        background-color: #4B164C;
+    /* height: 500px; */
+    width: 100%;
+    margin-top: 130px;
+    border-radius: 10px;
+    }
+
+}
+
